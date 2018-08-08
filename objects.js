@@ -3,9 +3,11 @@ var person = {
   lastName: 'Hanks'
 };
 
-function updateName(person, hairColor, color){
-  
+function updatePerson(person, hairColor, color){
+  return Object.assign({}, person, {[hairColor]: color})
 }
+const newPerson = updatePerson('green')
+console.log(newPerson);
 
 
 
