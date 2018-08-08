@@ -1,13 +1,10 @@
-var playlist = {
- artist: 'song' };
- 
-function updatePlaylist(playlist, artistName, songTitle){
-  playlist[artistName] = songTitle
-  return playlist
+var person = {
+  firstName: 'Cris',
+  lastName: 'Hanks'
 };
 
-function removeFromPlaylist(playlist, artistName){
-  delete playlist[artistName];
+function updateName(person, hairColor, color){
+  
 }
 
 
