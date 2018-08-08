@@ -1,13 +1,14 @@
-var person = {
-  firstName: 'Cris',
-  lastName: 'Hanks'
+var playlist = {
+ artist: 'song' };
+ 
+function updatePlaylist(playlist, artistName, songTitle){
+  playlist[artistName] = songTitle
+  return playlist
 };
 
-function updatePerson(person, hairColor, color){
-  return Object.assign({}, person, {[hairColor]: color})
+function removeFromPlaylist(playlist, artistName){
+  delete playlist[artistName];
 }
-const newPerson = updatePerson('green')
-console.log(newPerson);
 
 
 
